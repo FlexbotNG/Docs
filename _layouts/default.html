@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }} | flexbotng</title>
+        <link rel="stylesheet" type="text/css" href="https://flexbotng.github.io/Docs/style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="page-margin">
+                <a href="https://flexbotng.github.io/Docs/">
+                    flexbotng
+                    <small>Documentation</small>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="page-margin">
+                <ul>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/f4by/F4BY">F4BY</a></li>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/compile">Getting firmware</a></li>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/general_configuration">General configuration</a></li>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/connecting_components">Connecting your components</a></li>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/troubleshooting">Troubleshooting</a></li>
+                    <li><a href="https://flexbotng.github.io/Docs/documentation/tipsntricks">Tips and tricks</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content page-margin">
+            <div class="edit">
+                <a href="https://github.com/flexbotng/Docs/edit/gh-pages{{page.url | replace:'.html','.md'}}">Edit page</a>
+            </div>
+            {{ content }}
+        </div>
+    </body>
+
+</html>
